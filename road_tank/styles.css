@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.main-container{
+     display: grid;
+     grid-template-columns: 100px 400px 100px 300px 100px;
+     grid-template-rows: 100px 800px 100px;
+     grid-template-areas: 
+     "ls empty-space cs us rs"
+     "ls empty-space cs empty-space2 rs"
+     "ls ds cs empty-space2 rs";
+     height: 1000px;
+     width: 1000px;
+     background-color: rgb(196, 196, 196);
+}
+.image-container{
+    display: flex;
+    position: relative;
+
+}
+.tank-image{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+.image-container:hover .tank-image{
+    display: block;
+}
+.main-container > div{
+    display: flex;
+}
+.vertical{
+    flex-direction: column;
+}
+
+.horizontal{
+    flex-direction: row;
+}
+.ls{
+    grid-area: ls;
+}
+
+.empty-space{
+    grid-area:empty-space;
+}
+.empty-space2{
+    grid-area:empty-space2;
+}
+.rs{
+    grid-area: rs;
+}
+
+.ds{
+    grid-area: ds;
+}
+.cs{
+    grid-area: cs;
+}
+
