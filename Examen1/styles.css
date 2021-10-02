@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.principal{
+    width: 95%;
+    height: 90%;
+    background-color: rgb(251, 251, 251);
+    margin-top: 2%;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.52); 
+    box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.52); 
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 1% 60% 29%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "icons br tarjetas tc"
+    "icons br transactions tc";
+}
+
+.icons{
+    display: flex;
+    align-content: center;
+
+    flex-direction: column;
+    grid-area: icons;
+
+
+}
+
+.tc{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-area: tc;
+    background-color: rgb(255,241,241);
+    align-items: center;
+
+}
+.img-container{
+    margin-top: 8%;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.information > li{
+    list-style: none;
+    color: rgb(165,165,165);
+    font-style: unset;
+
+}
+.button{
+    margin-top: 10%;
+    width: 50%;
+    height: 10%;
+    background-color: rgb(251,159,137);
+    -webkit-box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.52); 
+    box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.52); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 23px;
+    color: white;
+}
+.button:hover{
+    background-color: rgb(231,139,117);
+}
+.tccard{
+    width: 50%;
+    height: 80%;
+}
+.icons2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 20%;
+    flex-direction: column;
+
+}
+
+.tarjets-container{
+    display: flex;
+    flex-direction: column;
+    grid-area: tarjetas;
+
+}
+.transactions{
+    display: flex;
+    flex-direction: column;
+    grid-area: transactions;
+
+}
+
+.icon-left{
+    width: 30%;
+    height: 30%;
+}
+
+.br1{
+    width: 1%;
+    height: 100%;
+    grid-area: br;
+    background-color: rgb(165,165,165);
+}
+.tarjets{
+    margin-top: 4.5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 100%;
+
+}
+.tarjet{
+    display: flex;
+    width: 25%;
+    height: 90%;
+    -webkit-box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.52); 
+    box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.52);
+    border-radius: 10px;
+    border: black 1px solid;  
+    align-items: center;
+    justify-content: space-evenly;  
+    flex-direction: column;
+}
+
+.tarjet > img{
+    width: 40%;
+    height: 40%;
+}
+
+.eye-container{
+    display: flex;
+    width: 10%;
+    height: 70%;
+    -webkit-box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.52); 
+    box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.52);
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+}
+.eye-container > img{
+    width: 70%;
+    height: 70%;
+} 
+
+.transaction{
+    margin-left: 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    border-bottom: rgb(165,165,165) 1px solid;
+    justify-content: space-between;
+}
+.transaction > img{
+    width: 20%;
+    height: 20%;
+}
+.left > img{
+    width: 40%;
+    height: 40%;
+}
+.left{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+.left > ul{
+    list-style: none;
+}
+
+.rigth{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+.rigth > img{
+    width: 40%;
+    height: 40%;
+}
+.transaction > ul{
+    list-style: none;
+}
+.confirm{
+    width: 100%;
+    height: 100%;
+}
+.transactions{  
+    width: 100%;
+    height: 100%;
+}
+
+.list-group{
+    margin-left: 4%;
+}
