@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="section">        
+                <p>Numero 1</p>
+                <input type="number" class="number1" id="number-1">
+            </div>  
+            <div class="section">
+                <p>Numero 2</p>
+                <input type="text" class="number2" id="number-2">
+            </div>
+            <h2>Resultado: <label for="" id="result-text"></label></h2>
+            <div class="operator">
+                <button class="button" id="button-add" onclick="add()">+</button>
+                <button class="button" id="button-substract" onclick="substract()">-</button>
+                <button class="button" id="button-equal" onclick="result()">=</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
