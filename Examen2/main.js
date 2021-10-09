@@ -7,12 +7,20 @@ function method1(name){
 method1("Alejandro");
 
 function method2(num1,num2){
+    if(num1==null || num1 =="" || typeof num1 !== 'number' || num2==null || num2 =="" || typeof num2 !== 'number' ){
+        console.log("no es posible realizar la operacion")
+    }else{
     console.log("Suma:", (Number(num1)+Number(num2)));
+    }
 }
 method2(2,3);
 
 function method3(num1,num2){
+    if(num1==null || num1 =="" || typeof num1 !== 'number' || num2==null || num2 =="" || typeof num2 !== 'number' ){
+        console.log("no es posible realizar la operacion")
+    }else{
     console.log("Resta:", (Number(num1)-Number(num2)));
+    }
 }
 method3(2,3);
 
@@ -28,31 +36,50 @@ method4("sad",3);
 method4(2,3);
 
 function method5(num1,num2){
+    if(num1==null || num1 =="" || typeof num1 !== 'number' || num2==null || num2 =="" || typeof num2 !== 'number' ){
+        console.log("no es posible realizar la operacion")
+    }else{
     console.log("División:", (Number(num1)/Number(num2)));
+    }
 }
 method5(2,3);
 
 function area(radio){
-    let circleArea=Math.PI*Math.pow(radio,2)
-    console.log("Area:"+circleArea+" m^2")
+    if(radio==null || radio =="" || typeof radio !== 'number'){
+        console.log("error")
+    }else{
+        let circleArea=Math.PI*Math.pow(radio,2);
+        console.log("Area:"+circleArea+" m^2");
+    }
 }
 
 area(2);
 
 function metersTokilometers(meters){
-    console.log(meters+" a km es:"+meters/1000+"km");
+    if(meters==null || meters =="" || typeof meters !== 'number'){
+        console.log("error")
+    }else{
+        console.log(meters+" a km es:"+meters/1000+"km");
+    }
 }
 
 metersTokilometers(2);
 
 function CelsiusToF(celcius){
-    let Faren= (celcius*9/5)+32;
+    if(celcius==null || celcius =="" || typeof celcius !== 'number'){
+        console.log("error")
+    }else{
 
-    console.log(celcius+" a Fahrenheit es: "+Faren+" F")
+        let Faren= (celcius*9/5)+32;
+
+        console.log(celcius+" a Fahrenheit es: "+Faren+" F")
+    }
+
 }
-CelsiusToF(20);
+CelsiusToF("s");
 
 function lists(list){
+    if(Array.isArray(list)){
     let higher=0;
     let less=999999;
     for (let index = 0; index < list.length; index++) {
@@ -64,6 +91,9 @@ function lists(list){
         }
     }
     console.log("mayor: "+higher+"/menor: "+less)
+    }else{
+        console.log("ingrese un array")
+    }
 }
 
 const list1 = [10,4,2,20,5];
@@ -74,9 +104,13 @@ lists(list2);
 lists(list3);
 
 function exponent(base,exponente){
-  console.log("valor exponencial: "+Math.pow(base,exponente))
+    if(base==null || base =="" || typeof base !== 'number' || exponente==null || exponente =="" || typeof exponente !== 'number' ){
+        console.log("no es posible realizar la operacion")
+    }else{
+        console.log("valor exponencial: "+Math.pow(base,exponente))
+    }
 }
-exponent(3,3);
+exponent("s",3);
 
 function petition(){
     let times =prompt("ingrese la cantidad de veces");
@@ -90,7 +124,7 @@ function petition(){
             let country=prompt("Ingrese país");
             if(country==null || country ==""){
                 alert("Ingrese información valida");
-                break;
+
             }else{
              countrys[index]=country;
             }
