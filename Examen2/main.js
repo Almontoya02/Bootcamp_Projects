@@ -126,7 +126,7 @@ function petition(){
                 alert("Ingrese información valida");
 
             }else{
-             countrys[index]=country;
+             countrys.push(country);
             }
         }
 

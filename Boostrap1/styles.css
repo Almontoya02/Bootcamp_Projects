@@ -1,0 +1,15 @@
+.container-fluid{
+    background-color: red;
+    height: 100px;
+}
+
+.test{
+    background-color: violet;
+    height: 20%;
+}
+
+.test1{
+    background-color: blue;
+    height: 20%;
+    color: white;
+}
