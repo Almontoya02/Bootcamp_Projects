@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.container-xxl{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.main-container{
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(251, 251, 251);
+    -webkit-box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.58); 
+    box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.58);
+    border-radius: 20px;
+
+}
+.containericons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    margin-top: 70px;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.rowcontainer-all{
+    width: 1013px;
+    height: 530px;
+    border-radius: 20px !important;
+}
+.card-icon{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.58); 
+    box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.58);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.test{
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.test2{
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 50px;
+}
+
+.btns{
+    background-color: rgb(255, 125 , 125) !important;
+    border: rgb(255, 125 , 125) 1px solid !important;
+    width: 170px !important;
+}
+.columnrigth{
+    width: 100%;
+    background-color: rgb(255, 241, 241);
+    border-radius: 20px !important;
+    display: flex;
+    gap: 30px !important;
+    flex-direction: column;
+
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: gray;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.coloricons{
+    font-family: 'Material Icons';
+    color: rgb(255, 125 , 125) !important;
+}
+.material-icons.md-48 { font-size: 48px; }
