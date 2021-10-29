@@ -65,6 +65,8 @@
     background-color: rgb(255, 125 , 125) !important;
     border: rgb(255, 125 , 125) 1px solid !important;
     width: 170px !important;
+    -webkit-box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.48); 
+    box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.48);
 }
 .columnrigth{
     width: 100%;
